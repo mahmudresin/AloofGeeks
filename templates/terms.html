@@ -1,0 +1,167 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'assets/images/favicon.png' %}" rel="icon" type="image/png">
+    <title>Sign In - Social Book</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/uikit.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
+
+</head>
+
+<body class="bg-gray-100">
+
+
+    <div id="wrapper" class="flex flex-col justify-between h-screen">
+
+        <!-- header-->
+        <div class="bg-white py-4 shadow dark:bg-gray-800">
+            <div class="max-w-6xl mx-auto">
+
+
+                <div class="flex items-center lg:justify-between justify-around">
+
+                    <a href="trending.html">
+                       <b><h1 style="font-size: 1.5rem;">Social Book</h1></b>
+                    </a>
+
+                    <div class="capitalize flex font-semibold hidden lg:block my-2 space-x-3 text-center text-sm">
+                        
+                        <a href="/signup" class="bg-pink-500 pink-500 px-6 py-3 rounded-md shadow text-white">Register</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Content-->
+        <div>
+            <div class="lg:p-12 max-w-md max-w-xl lg:my-0 my-12 mx-auto p-6 space-y-">
+                <h1 class="lg:text-3xl text-xl font-semibold  mb-6"> Log in</h1>
+
+
+               
+
+
+                <div>
+                    <h1>
+                        Terms and Conditions of Bookworm Website
+
+Welcome to Bookworm, an online platform dedicated to book lovers. The following Terms and Conditions (hereinafter referred to as "Terms") govern your use of the Bookworm website (hereinafter referred to as the "Website"). Please read these Terms carefully before accessing or using our services. By accessing or using the Website, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use the Website.
+
+1. Acceptance of Terms
+By accessing or using the Website, you acknowledge that you have read, understood, and agree to be bound by these Terms, as well as any additional terms and conditions that may apply to specific services or features offered on the Website.
+
+2. Eligibility
+You must be at least 18 years old to use the Website. By accessing or using the Website, you represent and warrant that you are 18 years of age or older and have the legal capacity to enter into these Terms.
+
+3. User Accounts
+a. In order to access certain features or services on the Website, you may be required to create a user account. You agree to provide accurate and complete information when creating your account and to promptly update any information that may change.
+b. You are solely responsible for maintaining the confidentiality of your account credentials, such as your username and password. You are responsible for all activities that occur under your account.
+c. You agree to notify us immediately of any unauthorized use of your account or any other breach of security.
+d. Bookworm reserves the right to suspend or terminate your account at any time without prior notice, for any reason, including, but not limited to, a violation of these Terms.
+
+4. Content
+a. The Website allows users to post, share, and interact with various types of content, including reviews, comments, and recommendations.
+b. You understand and agree that you are solely responsible for the content you post on the Website. You retain ownership of your content, but by posting it on the Website, you grant Bookworm a worldwide, non-exclusive, royalty-free, transferable license to use, reproduce, modify, distribute, display, and perform your content.
+c. You agree not to post any content that is illegal, defamatory, obscene, or violates the rights of others. Bookworm reserves the right to remove any content that violates these Terms or is otherwise objectionable.
+d. Bookworm does not endorse or guarantee the accuracy, completeness, or usefulness of any content posted by users. You rely on such content at your own risk.
+
+5. Intellectual Property Rights
+a. The Website and its content, including but not limited to text, graphics, logos, images, and software, are the property of Bookworm or its licensors and are protected by copyright, trademark, and other intellectual property laws.
+b. You may not reproduce, modify, distribute, display, or perform the Website's content without the prior written consent of Bookworm.
+
+6. Third-Party Links
+The Website may contain links to third-party websites or resources. Bookworm is not responsible for the availability, accuracy, or content of such websites or resources. These links are provided solely for your convenience and do not imply any endorsement by Bookworm.
+
+7. Disclaimer of Warranties
+a. The Website and its content are provided on an "as is" and "as available" basis, without any warranties of any kind, whether express or implied.
+b. Bookworm does not warrant that the Website will be uninterrupted, error-free, or free of viruses or other harmful components.
+
+8. Limitation of Liability
+a. To the maximum extent permitted by applicable law, Bookworm and its affiliates, officers, directors, employees, agents, and licensors shall not be
+                    </h1>
+                </div>
+
+
+
+            </div>
+        </div>
+        
+        <!-- Footer -->
+
+        <div class="lg:mb-5 py-3 uk-link-reset">
+            <div class="flex flex-col items-center justify-between lg:flex-row max-w-6xl mx-auto lg:space-y-0 space-y-3">
+                <div class="flex space-x-2 text-gray-700 uppercase">
+                    <a href="#"> About</a>
+                    <a href="#"> Help</a>
+                    <a href="#"> Terms</a>
+                    <a href="#"> Privacy</a>
+                </div>
+                <p class="capitalize"> © copyright 2020 by socol</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--<script>
+        
+        (function (window, document, undefined) {
+            'use strict';
+            if (!('localStorage' in window)) return;
+            var nightMode = localStorage.getItem('gmtNightMode');
+            if (nightMode) {
+                document.documentElement.className += ' dark';
+            }
+        })(window, document);
+    
+    
+        (function (window, document, undefined) {
+    
+            'use strict';
+    
+            // Feature test
+            if (!('localStorage' in window)) return;
+    
+            // Get our newly insert toggle
+            var nightMode = document.querySelector('#night-mode');
+            if (!nightMode) return;
+    
+            // When clicked, toggle night mode on or off
+            nightMode.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.documentElement.classList.toggle('dark');
+                if (document.documentElement.classList.contains('dark')) {
+                    localStorage.setItem('gmtNightMode', true);
+                    return;
+                }
+                localStorage.removeItem('gmtNightMode');
+            }, false);
+    
+        })(window, document);
+    </script>-->
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="{% static 'assets/js/tippy.all.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/uikit.js' %}"></script>
+    <script src="{% static 'assets/js/simplebar.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+
+</body>
+
+
+</html>
